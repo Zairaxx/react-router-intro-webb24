@@ -10,11 +10,13 @@ function App() {
   const [todos,setTodos] = useState([{
     title:"Diska",
     description: "Diska alla köksredskap",
-    completed:false
+    completed:false,
+    id:1
   },{
     title:"Städa",
     description: "Städa vardagsrummet och kök",
-    completed:true
+    completed:true,
+    id:2
   }])
 
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path='/' element={<HomePage todos={todos}/>}/>
         <Route path="/contact" element={<ContactPage/>} />
         <Route path="/todo" element={<TodoDetailsPage/>} />
+        <Route path="/todo/:id" element={<TodoDetailsPage/>} />
      </Routes>
 
      <footer style={{height:"100px", background:"darkred"}}>

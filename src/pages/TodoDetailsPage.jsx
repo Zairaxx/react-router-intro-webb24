@@ -1,10 +1,12 @@
-import { useLocation } from "react-router-dom"
+import { useLocation, useParams } from "react-router-dom"
 import { Link } from "react-router-dom";
 
 const TodoDetailsPage = () => {
     const location = useLocation();
     console.log(location);
 
+    const params = useParams();
+    console.log(params.id);
     return (
     <div>
         { location.state ? <><h2>Todo details</h2>

@@ -11,7 +11,7 @@ function HomePage({todos}){
         </header>
         <main>
             <h3>Exempel på todos</h3>
-            {todos.map(todo => <Link to="/todo" state={todo}><h3>{todo.title}</h3></Link>)}
+            {todos.map(todo => <Link to={"/todo/" + todo.id} state={todo}><h3>{todo.title}</h3></Link>)}
         </main>
     </div>)
 }
