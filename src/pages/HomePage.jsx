@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
-import Navigation from "../components/Navigation";
 function HomePage({todos}){
-
-    let fakeData = (a) => {console.log(a)};
 
     return(
     <div>

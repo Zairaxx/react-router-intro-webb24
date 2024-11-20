@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 
 const TodoDetailsPage = () => {
     const location = useLocation();
+
+    //I location.state kommer data som skickats via state inuti en Link
     console.log(location);
 
+    //Om det finns data i location.state visas det ut - Annars får vi ett error och hänvisar till startsidan
     return (
     <div>
         { location.state ? <><h2>Todo details</h2>
